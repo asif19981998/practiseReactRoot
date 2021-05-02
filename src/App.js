@@ -36,15 +36,15 @@ class App extends Component {
         <Hero name="Joker"/>
           </ErrorBoundary>    */}
         {/* <Movie id="1"></Movie> */}
-        <OwlCarouselCmp/>
+        {/* <OwlCarouselCmp/>
         <ElasticClousera/> 
-         <Navbar/>
-        <CoverImage/>
-        <div className="container">
+         <Navbar/> */}
+        {/* <CoverImage/> */}
+        {/* <div className="container">
           <DoctorDetials/> 
           <DoctorDetials/> 
           <DoctorDetials/> 
-        </div>
+        </div> */}
         
          <CreateDoctor/>
         
