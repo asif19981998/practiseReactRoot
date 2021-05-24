@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component,useReducer } from 'react';
 import Hero from './components/common/hero';
 import Movies from './components/movies'
 import Practise from './components/practise';
@@ -10,6 +10,10 @@ import CoverImage from './components/CoverImage';
 import Navbar from './components/navbar';
 import DoctorDetials from './components/DoctorCard';
 import CreateDoctor from './components/CreateDoctor';
+import DoctorModal from './components/Modal';
+import DragAndDrop from './components/DragAndDrop';
+import Doctorlist from './components/Doctorlist';
+
 class App extends Component {
   state = { 
    
@@ -21,7 +25,12 @@ class App extends Component {
    componentDidMount(){
     
    }
+  
   render() { 
+    
+
+
+
     return ( 
       <main >
          {/* <Movies/>
@@ -31,23 +40,26 @@ class App extends Component {
          </ErrorBoundary>
          <ErrorBoundary>
          <Hero name ="Sakib"/>
-         </ErrorBoundary>
-        <ErrorBoundary>
+         </ErrorBoundary> */}
+        {/* <ErrorBoundary>
         <Hero name="Joker"/>
           </ErrorBoundary>    */}
-        {/* <Movie id="1"></Movie> */}
-        {/* <OwlCarouselCmp/>
+        {/* <Movie id="1"></Movie>
+        <OwlCarouselCmp/>
         <ElasticClousera/> 
-         <Navbar/> */}
-        {/* <CoverImage/> */}
-        {/* <div className="container">
+         <Navbar/>
+        <CoverImage/>
+        <div className="container">
           <DoctorDetials/> 
           <DoctorDetials/> 
           <DoctorDetials/> 
         </div> */}
         
-         <CreateDoctor/>
-        
+         {/* <CreateDoctor/> */}
+         {/* <DoctorModal/> */}
+       <DragAndDrop/>
+      <Doctorlist/>
+
       </main>
      );
   }
